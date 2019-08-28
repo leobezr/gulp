@@ -13,12 +13,12 @@
   "keywords": [
     "gulp"
   ],
-  "author": "Jessica @thecodercoder",
+  "author": "Leonardo @leobezr",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/thecodercoder/Super-Simple-Gulp-File/issues"
   },
-  "homepage": "https://github.com/thecodercoder/Super-Simple-Gulp-File#readme",
+  "homepage": "https://github.com/leobezr/gulp",
   "dependencies": {
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",

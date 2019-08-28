@@ -1,5 +1,5 @@
 # Começando com Gulp
-Primeiro instale o Gulp versão 4+.
+Primeiro instale o Gulp versão 4.0.2+
 * ```$ npm install gulp-cli -g```
 * ```$ npm install gulp -D```
 * ```$ npx -p touch nodetouch gulpfile.js```
