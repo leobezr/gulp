@@ -5,7 +5,8 @@ Primeiro instale o Gulp versão 4+.
 * ```$ npx -p touch nodetouch gulpfile.js```
 * ```$ gulp --help```
 
-# Dependências
+## Dependências
+
 Você pode usar `npm` ou `yarn`, tanto faz, eu recomendo usar Yarn porque é mais rápido.
 * ```$ npm install gulp-sass```
 * ```$ npm install --save-dev gulp-babel@7 babel-core babel-preset-env```
@@ -13,14 +14,15 @@ Você pode usar `npm` ou `yarn`, tanto faz, eu recomendo usar Yarn porque é mai
 * ```$ npm install gulp-concat```
 * ```$ npm install gulp-uglify```
 
-# Métodos
-* ```javascript .task()``` Cria uma task
-* ```javascript .src()``` Arquivos para serem compilados
-* ```javascript .pipe()``` Funções para serem adicionadas
-* ```javascript .dest()``` Destino
-* ```javascript .watch()``` Listener
-* ```javascript .series()``` Ler em sequência
-* ```javascript .parallel()``` Ler em paralelo
+## Métodos
+
+* ```js .task()``` Cria uma task
+* ```js .src()``` Arquivos para serem compilados
+* ```js .pipe()``` Funções para serem adicionadas
+* ```js .dest()``` Destino
+* ```js .watch()``` Listener
+* ```js .series()``` Ler em sequência
+* ```js .parallel()``` Ler em paralelo
 
 
 
