@@ -1,9 +1,17 @@
 # Começando com Gulp
 Primeiro instale o Gulp versão 4.0.2+
-* ```$ npm install gulp-cli -g```
-* ```$ npm install gulp -D```
-* ```$ npx -p touch nodetouch gulpfile.js```
-* ```$ gulp --help```
+```
+$ npm install gulp-cli -g
+```
+```
+$ npm install gulp -D
+```
+```
+$ npx -p touch nodetouch gulpfile.js
+```
+```
+$ gulp --help
+```
 
 ## Dependências
 
@@ -48,5 +56,6 @@ $ npm install gulp-uglify
 .parallel() // Ler em paralelo
 ```
 
-
+## Exemplo
+Nesse exemplo eu vou usar ```jQuery``` como meu vendor, carregando primeiro ele pra depois carregar meu ```view.js```
 
