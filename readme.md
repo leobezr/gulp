@@ -57,5 +57,6 @@ $ npm install gulp-uglify
 ```
 
 ## Exemplo
-Nesse exemplo eu vou usar ```jQuery``` como meu vendor, carregando primeiro ele pra depois carregar meu ```view.js```
+Nesse exemplo eu vou usar ```jQuery``` como meu vendor, carregando primeiro ele pra depois carregar meu ```view.js```.
+Minha pasta ```app``` é onde eu vou guardar meus arquivos js e css, nunca editando os arquivos da pasta ```dist``` porque eles vão ser compilados sempre pra lá.
 
