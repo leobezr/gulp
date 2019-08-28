@@ -8,11 +8,21 @@ Primeiro instale o Gulp versão 4+.
 ## Dependências
 
 Você pode usar `npm` ou `yarn`, tanto faz, eu recomendo usar Yarn porque é mais rápido.
-* ```$ npm install gulp-sass```
-* ```$ npm install --save-dev gulp-babel@7 babel-core babel-preset-env```
-* ```$ npm install gulp-cssnano```
-* ```$ npm install gulp-concat```
-* ```$ npm install gulp-uglify```
+```
+$ npm install gulp-sass
+```
+```
+$ npm install --save-dev gulp-babel@7 babel-core babel-preset-env
+```
+```
+$ npm install gulp-cssnano
+```
+```
+$ npm install gulp-concat
+```
+```
+$ npm install gulp-uglify
+```
 
 ## Métodos
 
