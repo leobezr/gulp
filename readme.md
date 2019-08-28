@@ -16,13 +16,27 @@ Você pode usar `npm` ou `yarn`, tanto faz, eu recomendo usar Yarn porque é mai
 
 ## Métodos
 
-* ```js .task()``` Cria uma task
-* ```js .src()``` Arquivos para serem compilados
-* ```js .pipe()``` Funções para serem adicionadas
-* ```js .dest()``` Destino
-* ```js .watch()``` Listener
-* ```js .series()``` Ler em sequência
-* ```js .parallel()``` Ler em paralelo
+```js 
+.task() // Cria uma task
+```
+```js
+.src() // Arquivos para serem compilados
+```
+```js 
+.pipe() // Funções para serem adicionadas
+```
+```js 
+.dest() // Destino
+```
+```js 
+.watch() // Listener
+```
+```js 
+.series() // Ler em sequência
+```
+```js 
+.parallel() // Ler em paralelo
+```
 
 
 
