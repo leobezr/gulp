@@ -1,0 +1,3 @@
+function loadOut(){
+    alert('loaded');
+}
