@@ -20,6 +20,10 @@ Você pode usar `npm` ou `yarn`, tanto faz, eu recomendo usar Yarn porque é mai
 $ npm install gulp-sass
 ```
 ```
+# Babel 7
+$ npm install --save-dev gulp-babel @babel/core @babel/preset-env
+
+# Babel 6
 $ npm install --save-dev gulp-babel@7 babel-core babel-preset-env
 ```
 ```
