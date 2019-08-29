@@ -1,5 +1,6 @@
 # Começando com Gulp
-Primeiro instale o Gulp versão 4.0.2+
+Primeiro instale o Gulp versão 4.0.2+.
+OBS: Se começar a instalar usando ```npm```, termine sempre usando ```npm```.
 ```
 $ npm install gulp-cli -g
 ```
@@ -22,9 +23,6 @@ $ npm install gulp-sass
 ```
 # Babel 7
 $ npm install --save-dev gulp-babel @babel/core @babel/preset-env
-
-# Babel 6
-$ npm install --save-dev gulp-babel@7 babel-core babel-preset-env
 ```
 ```
 $ npm install gulp-cssnano
