@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thecodercoder/Super-Simple-Gulp-File.git"
+    "url": "git+https://github.com/leobezr/gulp"
   },
   "keywords": [
     "gulp"

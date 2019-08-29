@@ -11,7 +11,6 @@ const myFiles = [
     './app/js/view.js'
 ]
 
-
 gulp.task('sass', function () {
     return gulp.src('./app/style.scss')
         .pipe(sass())
@@ -19,6 +18,17 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('./dist/css'))
 })
 
+/*  Essa é uma opção de compilador para mais de um arquivo SASS compilando direto para 1 arquivo
+    Usando o concat(output)
+
+gulp.task('sass', function () {
+    return gulp.src('./app/styles/*.scss')
+        .pipe(sass())
+        .pipe(cssnano())
+        .pipe(concat('main.css'))
+        .pipe(gulp.dest('./dist/css'))
+})
+*/
 
 gulp.task('js', function () {
     return gulp.src(myFiles)
