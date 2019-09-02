@@ -33,7 +33,7 @@ $ npm install gulp-concat
 ```
 $ npm install gulp-uglify
 ```
-Você pode instalar tudo junto tambem.
+Você pode instalar tudo de uma vez.
 ```
 npm install --save-dev gulp-sass gulp-cssnano gulp-concat gulp-uglify gulp-babel @babel/core @babel/preset-env
 ```
