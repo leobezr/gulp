@@ -22,7 +22,7 @@ $ npm install gulp-sass
 ```
 ```
 # Babel 7
-$ npm install --save-dev gulp-babel @babel/core @babel/preset-env
+$ npm install gulp-babel @babel/core @babel/preset-env
 ```
 ```
 $ npm install gulp-cssnano
@@ -32,6 +32,10 @@ $ npm install gulp-concat
 ```
 ```
 $ npm install gulp-uglify
+```
+Você pode instalar tudo junto tambem.
+```
+npm install --save-dev gulp-sass gulp-cssnano gulp-concat gulp-uglify gulp-babel @babel/core @babel/preset-env
 ```
 
 ## Métodos
