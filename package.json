@@ -1,28 +1,27 @@
 {
-  "name": "super-simple-gulp-file",
-  "version": "1.0.0",
-  "description": "Super simple Gulp file",
+  "name": "fintask-landing-page",
+  "version": "0.1.0",
+  "description": "Official fintask landing page",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leobezr/gulp"
+    "url": "git+https://bitbucket.org/fintask/fintask-landing-page/src"
   },
   "keywords": [
     "gulp"
   ],
   "author": "Leonardo @leobezr",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/thecodercoder/Super-Simple-Gulp-File/issues"
-  },
-  "homepage": "https://github.com/leobezr/gulp",
+  "homepage": "https://bitbucket.org/fintask/fintask-landing-page/src/readme.md",
   "dependencies": {
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
     "gulp-cssnano": "^2.1.3",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2"
   },

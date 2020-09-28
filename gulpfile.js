@@ -1,9 +1,11 @@
-const gulp = require('gulp');
-const babel = require('gulp-babel');
-const cssnano = require('gulp-cssnano');
-const sass = require('gulp-sass');
-const concat = require('gulp-concat');
-const uglify = require('gulp-uglify');
+const GULP = require('gulp');
+const BABEL = require('gulp-babel');
+const CSS_NANO = require('gulp-cssnano');
+const SASS = require('gulp-sass');
+const CONCAT = require('gulp-concat');
+const UGLIFY = require('gulp-uglify');
+const CONNECT = require('gulp-connect');
+const HTML_MIN = require('gulp-htmlmin');
 
 const myFiles = [
     './app/js/vendors/*.js',
@@ -11,37 +13,45 @@ const myFiles = [
     './app/js/view.js'
 ]
 
-gulp.task('sass', function () {
-    return gulp.src('./app/style.scss')
-        .pipe(sass())
-        .pipe(cssnano())
-        .pipe(gulp.dest('./dist/css'))
+// Webserver
+GULP.task("connect", function () {
+    CONNECT.server({
+        root: 'app',
+        livereload: true
+    })
 })
 
-/*  Essa é uma opção de compilador para mais de um arquivo SASS compilando direto para 1 arquivo
-    Usando o concat(output)
-
-gulp.task('sass', function () {
-    return gulp.src('./app/styles/*.scss')
-        .pipe(sass())
-        .pipe(cssnano())
-        .pipe(concat('main.css'))
-        .pipe(gulp.dest('./dist/css'))
+// Compilers
+GULP.task("sass", function () {
+    return GULP.src('./app/style/global.scss')
+        .pipe(SASS())
+        .pipe(CSS_NANO())
+        .pipe(GULP.dest('./dist/css'))
 })
-*/
-
-gulp.task('js', function () {
-    return gulp.src(myFiles)
-        .pipe(babel({
+GULP.task("js", function () {
+    return GULP.src(myFiles)
+        .pipe(BABEL({
             presets: ['@babel/env']
         }))
-        .pipe(concat('all.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('dist'));
+        .pipe(CONCAT('all.js'))
+        .pipe(UGLIFY())
+        .pipe(GULP.dest('dist'));
+})
+GULP.task("html", function () {
+    return GULP.src("./app/index.html")
+        .pipe(HTML_MIN({ collapseWhitespace: true }))
+        .pipe(GULP.dest("dist"))
 })
 
-gulp.task('default', function(){
-    gulp.watch('./app/*.scss', gulp.series('sass')),
-    gulp.watch('./app/js/**/*.js', gulp.series('js'));
+// Watchers
+GULP.task('watch', function () {
+    GULP.watch("./app/style/*.scss", GULP.series("sass"));
+    GULP.watch("./app/js/**/*.js", GULP.series("js"));
+    GULP.watch("./app/*.html", GULP.series("html"))
     return
 });
+
+// Run
+GULP.task('default', GULP.series(
+    GULP.parallel("connect", "watch")
+));
